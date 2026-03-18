@@ -24,7 +24,7 @@ const POPULAR_BILLERS = [
 
 export default function PopularBillers({
   excludeSlug,
-  title = "Popular Biller Codes",
+  title = "Popular BPAY Biller Codes",
   limit = 10,
 }: PopularBillersProps) {
   const billers = POPULAR_BILLERS.filter((b) => b.slug !== excludeSlug).slice(0, limit);
@@ -53,7 +53,7 @@ export default function PopularBillers({
           href="/all-biller-codes/"
           className="text-sm text-brand-600 hover:text-brand-700 hover:underline font-medium"
         >
-          View all 30,000+ biller codes
+          View all 30,000+ BPAY biller codes
         </Link>
       </div>
     </section>

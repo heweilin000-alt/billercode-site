@@ -22,7 +22,7 @@ export default function SearchBox({ defaultValue = "" }: { defaultValue?: string
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search by biller code or merchant name..."
+          placeholder="Search BPAY biller code or merchant name..."
           className="flex-1 px-4 py-3 text-base rounded-l-xl outline-none bg-transparent"
           autoComplete="off"
         />

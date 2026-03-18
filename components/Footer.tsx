@@ -16,27 +16,27 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-white font-semibold mb-3 text-sm">Biller Codes</h3>
+            <h3 className="text-white font-semibold mb-3 text-sm">BPAY Biller Codes</h3>
             <div className="space-y-2 text-sm">
               <Link href="/all-biller-codes/" className="block hover:text-white transition-colors">
-                All Biller Codes
+                All BPAY Biller Codes
               </Link>
               <Link href="/biller-code-search/" className="block hover:text-white transition-colors">
-                Search Biller Codes
+                Search BPAY Codes
               </Link>
               <Link href="/all-biller-codes/?letter=A" className="block hover:text-white transition-colors">
-                Billers Starting with A
+                BPAY Billers Starting with A
               </Link>
               <Link href="/all-biller-codes/?letter=B" className="block hover:text-white transition-colors">
-                Billers Starting with B
+                BPAY Billers Starting with B
               </Link>
               <Link href="/all-biller-codes/?letter=C" className="block hover:text-white transition-colors">
-                Billers Starting with C
+                BPAY Billers Starting with C
               </Link>
             </div>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-3 text-sm">Popular Billers</h3>
+            <h3 className="text-white font-semibold mb-3 text-sm">Popular BPAY Billers</h3>
             <div className="space-y-2 text-sm">
               {POPULAR_FOOTER_LINKS.map(({ code, name }) => (
                 <Link

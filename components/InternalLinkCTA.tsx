@@ -4,18 +4,18 @@ export default function InternalLinkCTA() {
   return (
     <div className="bg-brand-50 border border-brand-200 rounded-xl p-6 mt-8">
       <h3 className="font-semibold text-gray-900 mb-3">
-        Find Your Biller Code
+        Find Your BPAY Biller Code
       </h3>
       <p className="text-sm text-gray-600 mb-4">
         Need to make a BPAY payment? Search our directory of over 30,000
-        Australian biller codes to find the one you need.
+        Australian BPAY biller codes to find the one you need.
       </p>
       <div className="flex flex-wrap gap-3">
         <Link
           href="/biller-code-search/"
           className="px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-lg hover:bg-brand-700 transition-colors"
         >
-          Search Biller Codes
+          Search BPAY Codes
         </Link>
         <Link
           href="/all-biller-codes/"

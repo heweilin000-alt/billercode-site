@@ -52,10 +52,10 @@ export default async function AllBillerCodesPage({ searchParams }: Props) {
         All Australian BPAY Biller Codes
       </h1>
       <p className="text-gray-500 mb-6">
-        Browse {letter ? "biller codes starting with " + letter : `all ${count?.toLocaleString()} registered BPAY biller codes`}.
+        Browse {letter ? "BPAY biller codes starting with " + letter : `all ${count?.toLocaleString()} registered BPAY biller codes`}.
         You can also{" "}
         <Link href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
-          search by name or code
+          search BPAY codes by name or number
         </Link>.
       </p>
 

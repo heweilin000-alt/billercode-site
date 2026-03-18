@@ -36,13 +36,14 @@ export default async function HomePage() {
       <div className="py-14 md:py-20 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-sm font-medium mb-6">
           <span className="w-2 h-2 bg-brand-500 rounded-full animate-pulse" />
-          30,000+ verified biller codes
+          30,000+ verified BPAY biller codes
         </div>
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
           Australian BPAY<br className="hidden md:block" /> Biller Code Lookup
         </h1>
         <p className="text-gray-500 mb-8 max-w-2xl mx-auto text-lg">
-          Find the biller code you need by merchant name or code number.
+          Search BPAY biller codes by merchant name or code number.
+          Pay your bills faster with the right BPAY code.
         </p>
         <SearchBox />
       </div>
@@ -59,8 +60,8 @@ export default async function HomePage() {
             </svg>
           </div>
           <div>
-            <span className="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">All Biller Codes</span>
-            <p className="text-sm text-gray-400">Browse 30,000+ codes</p>
+            <span className="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">All BPAY Biller Codes</span>
+            <p className="text-sm text-gray-400">Browse 30,000+ BPAY codes</p>
           </div>
         </Link>
         <Link
@@ -73,8 +74,8 @@ export default async function HomePage() {
             </svg>
           </div>
           <div>
-            <span className="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">Search Biller Codes</span>
-            <p className="text-sm text-gray-400">By name or code number</p>
+            <span className="font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">Search BPAY Codes</span>
+            <p className="text-sm text-gray-400">Find by name or BPAY code</p>
           </div>
         </Link>
         <Link
@@ -93,8 +94,8 @@ export default async function HomePage() {
         </Link>
       </div>
 
-      {/* Popular Biller Codes — SEO: internal links to detail pages from homepage */}
-      <PopularBillers title="Popular Biller Codes" limit={10} />
+      {/* Popular BPAY Biller Codes — SEO: internal links to detail pages from homepage */}
+      <PopularBillers title="Popular BPAY Biller Codes" limit={10} />
 
       {/* Info section */}
       <div className="bg-gradient-to-r from-brand-50 to-emerald-50 border border-brand-200 rounded-xl p-6 md:p-8 mt-10 mb-8">
