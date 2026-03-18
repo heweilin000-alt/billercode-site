@@ -37,7 +37,7 @@ export default async function SearchPage({ searchParams }: Props) {
       </h1>
       <p className="text-gray-500 mb-6">
         Enter a BPAY biller code number or merchant name to search. Or{" "}
-        <Link href="/all-biller-codes/" className="text-brand-600 hover:underline font-medium">
+        <Link prefetch={false} href="/all-biller-codes/" className="text-brand-600 hover:underline font-medium">
           browse all BPAY codes
         </Link>.
       </p>

@@ -16,6 +16,7 @@ export default function BillerCard({
 }: BillerCardProps) {
   return (
     <Link
+      prefetch={false}
       href={`/biller-codes/${slug}/`}
       className="block p-4 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:shadow-md transition-all group"
     >

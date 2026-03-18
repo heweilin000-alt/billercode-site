@@ -39,6 +39,7 @@ export default async function RelatedBillers({
         {related.map((b) => (
           <Link
             key={b.slug}
+            prefetch={false}
             href={`/biller-codes/${b.slug}/`}
             className="flex items-center justify-between gap-2 px-4 py-3 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:shadow-sm transition-all group"
           >

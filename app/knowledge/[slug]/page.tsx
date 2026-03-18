@@ -83,9 +83,9 @@ export default async function BlogPostPage({ params }: Props) {
       />
 
       <nav className="text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:text-brand-600 transition-colors">Home</Link>
+        <Link prefetch={false} href="/" className="hover:text-brand-600 transition-colors">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/knowledge/" className="hover:text-brand-600 transition-colors">Knowledge</Link>
+        <Link prefetch={false} href="/knowledge/" className="hover:text-brand-600 transition-colors">Knowledge</Link>
         <span className="mx-2">/</span>
         <span className="text-gray-900">{post.title}</span>
       </nav>

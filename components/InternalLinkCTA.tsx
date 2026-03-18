@@ -12,18 +12,21 @@ export default function InternalLinkCTA() {
       </p>
       <div className="flex flex-wrap gap-3">
         <Link
+          prefetch={false}
           href="/biller-code-search/"
           className="px-4 py-2 bg-brand-600 text-white text-sm font-medium rounded-lg hover:bg-brand-700 transition-colors"
         >
           Search BPAY Codes
         </Link>
         <Link
+          prefetch={false}
           href="/all-biller-codes/"
           className="px-4 py-2 border border-brand-300 text-brand-700 text-sm font-medium rounded-lg hover:bg-brand-50 transition-colors"
         >
           Browse All Codes
         </Link>
         <Link
+          prefetch={false}
           href="/knowledge/"
           className="px-4 py-2 border border-gray-200 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-50 transition-colors"
         >

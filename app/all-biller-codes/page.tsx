@@ -54,7 +54,7 @@ export default async function AllBillerCodesPage({ searchParams }: Props) {
       <p className="text-gray-500 mb-6">
         Browse {letter ? "BPAY biller codes starting with " + letter : `all ${count?.toLocaleString()} registered BPAY biller codes`}.
         You can also{" "}
-        <Link href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
+        <Link prefetch={false} href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
           search BPAY codes by name or number
         </Link>.
       </p>
@@ -91,12 +91,12 @@ export default async function AllBillerCodesPage({ searchParams }: Props) {
         </h2>
         <p className="text-sm text-gray-600 mb-4">
           Use our{" "}
-          <Link href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
+          <Link prefetch={false} href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
             biller code search
           </Link>{" "}
           to quickly find a specific merchant or code. For guides on making BPAY
           payments, visit our{" "}
-          <Link href="/knowledge/" className="text-brand-600 hover:underline font-medium">
+          <Link prefetch={false} href="/knowledge/" className="text-brand-600 hover:underline font-medium">
             knowledge base
           </Link>.
         </p>

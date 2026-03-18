@@ -11,6 +11,7 @@ export default function AlphabetNav({ basePath, activeLetter }: AlphabetNavProps
   return (
     <nav className="flex flex-wrap gap-1 mb-6" aria-label="Alphabetical navigation">
       <Link
+        prefetch={false}
         href={basePath}
         className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-colors ${
           !activeLetter
@@ -23,6 +24,7 @@ export default function AlphabetNav({ basePath, activeLetter }: AlphabetNavProps
       {LETTERS.map((letter) => (
         <Link
           key={letter}
+          prefetch={false}
           href={`${basePath}?letter=${letter}`}
           className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-colors ${
             activeLetter === letter

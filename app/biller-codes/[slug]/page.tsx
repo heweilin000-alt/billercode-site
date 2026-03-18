@@ -86,9 +86,9 @@ export default async function BillerCodePage({ params }: Props) {
 
       {/* Breadcrumb */}
       <nav className="text-sm text-gray-500 mb-4">
-        <Link href="/" className="hover:text-brand-600 transition-colors">Home</Link>
+        <Link prefetch={false} href="/" className="hover:text-brand-600 transition-colors">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/all-biller-codes/" className="hover:text-brand-600 transition-colors">All Biller Codes</Link>
+        <Link prefetch={false} href="/all-biller-codes/" className="hover:text-brand-600 transition-colors">All Biller Codes</Link>
         <span className="mx-2">/</span>
         <span className="text-gray-900 font-medium">{biller.biller_code}</span>
       </nav>
@@ -209,7 +209,7 @@ export default async function BillerCodePage({ params }: Props) {
             into your bank&apos;s online banking, select BPAY, enter biller
             code {biller.biller_code}, your customer reference number from your
             bill, and the amount you want to pay. Learn more in our{" "}
-            <Link href="/knowledge/how-to-make-a-bpay-payment-step-by-step-guide-commbank-nab-westpac-anz/" className="text-brand-600 hover:underline">
+            <Link prefetch={false} href="/knowledge/how-to-make-a-bpay-payment-step-by-step-guide-commbank-nab-westpac-anz/" className="text-brand-600 hover:underline">
               step-by-step BPAY payment guide
             </Link>.
           </p>
@@ -224,13 +224,13 @@ export default async function BillerCodePage({ params }: Props) {
 
       {/* Contextual links — SEO: link to hub pages */}
       <div className="mt-10 flex flex-wrap gap-3 text-sm">
-        <Link href="/biller-code-search/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
+        <Link prefetch={false} href="/biller-code-search/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
           Search Biller Codes
         </Link>
-        <Link href="/all-biller-codes/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
+        <Link prefetch={false} href="/all-biller-codes/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
           All Biller Codes
         </Link>
-        <Link href="/knowledge/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
+        <Link prefetch={false} href="/knowledge/" className="px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:text-brand-700 transition-colors">
           BPAY Guides
         </Link>
       </div>

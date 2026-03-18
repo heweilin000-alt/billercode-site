@@ -18,19 +18,19 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm">BPAY Biller Codes</h3>
             <div className="space-y-2 text-sm">
-              <Link href="/all-biller-codes/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/all-biller-codes/" className="block hover:text-white transition-colors">
                 All BPAY Biller Codes
               </Link>
-              <Link href="/biller-code-search/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/biller-code-search/" className="block hover:text-white transition-colors">
                 Search BPAY Codes
               </Link>
-              <Link href="/all-biller-codes/?letter=A" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/all-biller-codes/?letter=A" className="block hover:text-white transition-colors">
                 BPAY Billers Starting with A
               </Link>
-              <Link href="/all-biller-codes/?letter=B" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/all-biller-codes/?letter=B" className="block hover:text-white transition-colors">
                 BPAY Billers Starting with B
               </Link>
-              <Link href="/all-biller-codes/?letter=C" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/all-biller-codes/?letter=C" className="block hover:text-white transition-colors">
                 BPAY Billers Starting with C
               </Link>
             </div>
@@ -41,6 +41,7 @@ export default function Footer() {
               {POPULAR_FOOTER_LINKS.map(({ code, name }) => (
                 <Link
                   key={code}
+                  prefetch={false}
                   href={`/biller-codes/${code}/`}
                   className="block hover:text-white transition-colors"
                 >
@@ -52,16 +53,16 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm">Resources</h3>
             <div className="space-y-2 text-sm">
-              <Link href="/knowledge/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/knowledge/" className="block hover:text-white transition-colors">
                 BPAY Knowledge Base
               </Link>
-              <Link href="/knowledge/how-to-make-a-bpay-payment-step-by-step-guide-commbank-nab-westpac-anz/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/knowledge/how-to-make-a-bpay-payment-step-by-step-guide-commbank-nab-westpac-anz/" className="block hover:text-white transition-colors">
                 How to Make a BPAY Payment
               </Link>
-              <Link href="/knowledge/bpay-in-australia-the-ultimate-guide-to-paying-and-getting-paid/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/knowledge/bpay-in-australia-the-ultimate-guide-to-paying-and-getting-paid/" className="block hover:text-white transition-colors">
                 BPAY Ultimate Guide
               </Link>
-              <Link href="/about/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/about/" className="block hover:text-white transition-colors">
                 About Us
               </Link>
             </div>
@@ -69,13 +70,13 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 text-sm">Legal</h3>
             <div className="space-y-2 text-sm">
-              <Link href="/privacy-policy/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/privacy-policy/" className="block hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms-and-conditions/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/terms-and-conditions/" className="block hover:text-white transition-colors">
                 Terms & Conditions
               </Link>
-              <Link href="/disclaimer/" className="block hover:text-white transition-colors">
+              <Link prefetch={false} href="/disclaimer/" className="block hover:text-white transition-colors">
                 Disclaimer
               </Link>
             </div>

@@ -26,7 +26,7 @@ export default async function KnowledgePage() {
       <p className="text-gray-500 mb-8">
         Guides and articles about BPAY payments in Australia. Need to find a
         biller code?{" "}
-        <Link href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
+        <Link prefetch={false} href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
           Search here
         </Link>.
       </p>
@@ -37,7 +37,7 @@ export default async function KnowledgePage() {
             key={post.slug}
             className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow"
           >
-            <Link href={`/knowledge/${post.slug}/`}>
+            <Link prefetch={false} href={`/knowledge/${post.slug}/`}>
               <h2 className="text-lg font-semibold text-gray-900 mb-2 hover:text-brand-600 transition-colors">
                 {post.title}
               </h2>

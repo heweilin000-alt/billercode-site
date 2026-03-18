@@ -36,6 +36,7 @@ export default function PopularBillers({
         {billers.map((b) => (
           <Link
             key={b.slug}
+            prefetch={false}
             href={`/biller-codes/${b.slug}/`}
             className="flex items-center justify-between gap-2 px-4 py-3 bg-white border border-gray-200 rounded-lg hover:border-brand-300 hover:shadow-sm transition-all group"
           >
@@ -50,6 +51,7 @@ export default function PopularBillers({
       </div>
       <div className="mt-4 text-center">
         <Link
+          prefetch={false}
           href="/all-biller-codes/"
           className="text-sm text-brand-600 hover:text-brand-700 hover:underline font-medium"
         >

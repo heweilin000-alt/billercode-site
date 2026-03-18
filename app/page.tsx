@@ -111,15 +111,15 @@ export default async function HomePage() {
         </p>
         <p className="text-gray-600 leading-relaxed">
           You can{" "}
-          <Link href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
+          <Link prefetch={false} href="/biller-code-search/" className="text-brand-600 hover:underline font-medium">
             search for a biller code
           </Link>{" "}
           by entering a merchant name or code number, or{" "}
-          <Link href="/all-biller-codes/" className="text-brand-600 hover:underline font-medium">
+          <Link prefetch={false} href="/all-biller-codes/" className="text-brand-600 hover:underline font-medium">
             browse the complete list
           </Link>{" "}
           of all registered BPAY billers. To learn more about how BPAY works, visit our{" "}
-          <Link href="/knowledge/" className="text-brand-600 hover:underline font-medium">
+          <Link prefetch={false} href="/knowledge/" className="text-brand-600 hover:underline font-medium">
             knowledge base
           </Link>
           .
