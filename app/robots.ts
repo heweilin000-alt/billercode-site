@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "MJ12bot", disallow: "/" },
       { userAgent: "DotBot", disallow: "/" },
     ],
-    sitemap: "https://billercodes.com/sitemap.xml",
+    sitemap: "https://www.billercodes.com/sitemap.xml",
   };
 }

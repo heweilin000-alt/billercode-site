@@ -4,7 +4,7 @@ import { supabase } from "@/lib/supabase";
 
 export const revalidate = 2592000; // 30 days
 
-const SITE_URL = "https://billercodes.com";
+const SITE_URL = "https://www.billercodes.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];

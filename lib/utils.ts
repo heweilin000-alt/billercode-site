@@ -1,5 +1,5 @@
 export const SITE_NAME = "Biller Codes Australia";
-export const SITE_URL = "https://billercodes.com";
+export const SITE_URL = "https://www.billercodes.com";
 export const PER_PAGE = 50;
 
 export const PAYMENT_METHOD_LABELS: Record<string, string> = {
